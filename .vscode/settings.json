@@ -1,0 +1,5 @@
+{
+    "DockerRun.DisableDockerrc": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true
+}
