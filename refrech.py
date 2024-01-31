@@ -1,4 +1,6 @@
 # Complete code incorporating changes
+# in function 
+# Update data from the 'data.py' file or fetch real-time data
 
 import tkinter as tk
 from PIL import Image, ImageTk
@@ -12,14 +14,14 @@ plt.rcParams["axes.prop_cycle"] = plt.cycler(color=["#4C2A85", "#BE96FF", "#9557
 fig1, ax1 = plt.subplots()
 ax1.bar(sales_data.keys(), sales_data.values())
 ax1.set_title("Classification trafic")
-ax1.set_xlabel("Product")
-ax1.set_ylabel("Sales")
+ax1.set_xlabel("Trafic")
+ax1.set_ylabel("")
 
 fig2, ax2 = plt.subplots()
 ax2.barh(list(inventory_data.keys()), inventory_data.values())
 ax2.set_title(" Consomation des Noeuds")
-ax2.set_xlabel("Product")
-ax2.set_ylabel("Sales")
+ax2.set_xlabel("interval")
+ax2.set_ylabel("indice")
 
 fig3, ax3 = plt.subplots()
 ax3.pie(product_data.values(), labels=product_data.keys(), autopct='%1.1f%%')
@@ -32,8 +34,8 @@ ax4.set_xlabel("intervale de temps")
 ax4.set_ylabel("Trafic")
 
 fig5, ax5 = plt.subplots()
-ax5.fill_between(inventory_month_data.keys(), inventory_month_data.values())
-ax5.set_xlabel("INTERVAL")
+ax5.bar(inventory_month_data.keys(), inventory_month_data.values())
+ax5.set_xlabel("Services")
 ax5.set_ylabel("Trafic")
 
 root = tk.Tk()
@@ -46,11 +48,10 @@ side_frame.pack(side="left", fill="y")
 label = tk.Label(side_frame, text='Dashboard', bg="#4C2A85", fg="#fff", font=25)
 label.pack(pady=50, padx=40)
 
-# Assume you have functions in data.py like get_latest_sales_data(), get_latest_inventory_data(), etc.
 
 
 def refresh():
-    # Update data from the 'data.py' file or fetch real-time data
+    
     sales_data = get_latest_sales_data()
     inventory_data = get_latest_inventory_data()
     product_data = get_latest_product_data()
@@ -81,7 +82,7 @@ def refresh():
     ax4.set_ylabel("Trafic")
 
     ax5.clear()
-    ax5.fill_between(inventory_month_data.keys(), inventory_month_data.values())
+    ax5.bar(inventory_month_data.keys(), inventory_month_data.values())
     ax5.set_xlabel("INTERVAL")
     ax5.set_ylabel("Trafic")
 
@@ -100,7 +101,7 @@ charts_frame.pack()
 upper_frame = tk.Frame(charts_frame)
 upper_frame.pack(fill="both", expand=True)
 
-# Création de l'image à intégrer dans le Canvas
+# Création de l'image à intégrer dans le Canv
 image_path = "prot2.png"  # Remplacez ceci par le chemin de votre image
 img = Image.open(image_path)
 photo = ImageTk.PhotoImage(img)

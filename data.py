@@ -1,18 +1,20 @@
 # Dummy data
 sales_data = {
-    "Trafic A": 100,
-    "Trafic B": 200,
-    "Trafic C": 300,
-    "Trafic D": 400,
-    "Trafic E": 500
+    "PING": 100,
+    "DNS": 200,
+    "TELNET": 300,
+    "VOICE": 400,
+    "CSI": 500,
+    "CSA":800,
+    "QUAKE3": 600
 }
 
 inventory_data = {
-    "Trafic A": 150,
-    "Trafic B": 75,
-    "Trafic C": 100,
-    "Trafic D": 125,
-    "Trafic E": 150
+    "1": 150,
+    "2": 75,
+    "3": 100,
+    "4": 125,
+    "5": 150
 }
 
 product_data = {
@@ -30,16 +32,8 @@ sales_year_data = {
     2022: 15000
 }
 inventory_month_data = {
-    "Jan": 200,
-    "Feb": 300,
-    "Mar": 800,
-    "Apr": 1300,
-    "May": 600,
-    "Jun": 900,
-    "Jul": 700,
-    "Aug": 900,
-    "Sep": 1000,
-    "Oct": 300,
-    "Nov": 450,
-    "Dec": 1300
+    "shared services": 2,
+    "dedicated services": 0,
+    "realtime services": 51,
+    "unknow services": 0
 }

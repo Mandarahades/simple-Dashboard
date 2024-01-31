@@ -1,0 +1,18 @@
+Nom,Valeur
+p,0
+shared services,2
+dedicated services,0
+realtime services,51
+unknown services,0
+PING,0
+DNS,0
+TELNET,0
+VOICE,12
+CSI,0
+CSA,0
+QUAKE3,0
+unknown trafic,0
+n1,15
+n2,70
+n3,20
+n4,50
