@@ -62,14 +62,14 @@ def refresh():
     ax1.clear()
     ax1.bar(sales_data.keys(), sales_data.values())
     ax1.set_title("Classification trafic")
-    ax1.set_xlabel("Product")
-    ax1.set_ylabel("Sales")
+    ax1.set_xlabel("Trafic")
+    ax1.set_ylabel("")
 
     ax2.clear()
     ax2.barh(list(inventory_data.keys()), inventory_data.values())
     ax2.set_title(" Consomation des Noeuds")
-    ax2.set_xlabel("Product")
-    ax2.set_ylabel("Sales")
+    ax2.set_xlabel("Indice")
+    ax2.set_ylabel("")
 
     ax3.clear()
     ax3.pie(product_data.values(), labels=product_data.keys(), autopct='%1.1f%%')
@@ -83,8 +83,8 @@ def refresh():
 
     ax5.clear()
     ax5.bar(inventory_month_data.keys(), inventory_month_data.values())
-    ax5.set_xlabel("INTERVAL")
-    ax5.set_ylabel("Trafic")
+    ax5.set_xlabel("Services")
+    ax5.set_ylabel("")
 
     # Redraw the canvas
     canvas2.draw()
@@ -102,7 +102,7 @@ upper_frame = tk.Frame(charts_frame)
 upper_frame.pack(fill="both", expand=True)
 
 # Création de l'image à intégrer dans le Canv
-image_path = "prot2.png"  # Remplacez ceci par le chemin de votre image
+image_path = "Figure_2 (4).png"  # Remplacez ceci par le chemin de votre image
 img = Image.open(image_path)
 photo = ImageTk.PhotoImage(img)
 

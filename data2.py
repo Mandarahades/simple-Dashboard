@@ -1,11 +1,4 @@
 
-
-# Placeholder function to simulate fetching the latest sales data
-# Placeholder function to simulate fetching the latest inventory data
-# Placeholder function to simulate fetching the latest product data
-# Placeholder function to simulate fetching the latest yearly sales data
-# Placeholder function to simulate fetching the latest monthly inventory data
-
 import random
 import datetime
 
